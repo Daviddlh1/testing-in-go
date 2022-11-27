@@ -14,6 +14,14 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+//  command to know the porcentage of lines you are covering with testing is:
+// go test ./controller -coverprofile=coverage.out
+// It also generates an coverage.out file to show it to you.
+
+// go tool cover -html=coverage.out:
+// This command takes the coverage.out file and display it in a more legible format in the browser that shows
+// you some cases you are not considering and should be tested.
+
 func TestGetPokemonFromPokeApiSuccess(t *testing.T) {
 	c := require.New(t)
 
