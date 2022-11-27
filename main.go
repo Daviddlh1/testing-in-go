@@ -8,6 +8,11 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// function added just to make my first unit test
+func Add(a, b int) int {
+	return a + b
+}
+
 func main() {
 	router := mux.NewRouter()
 
